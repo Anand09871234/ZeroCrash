@@ -1,0 +1,62 @@
+Python virtual environment
+
+/backend/venv/
+pycache/
+
+Node.js dependencies
+
+/frontend/node_modules/
+
+Build output
+
+/frontend/dist/
+
+Logs
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+OS-specific files
+
+.DS_Store
+Thumbs.db
+
+
+### **Step 2: Create the Repository on GitHub**
+
+1.  Go to [GitHub.com](https://github.com) and log in.
+2.  In the top-right corner, click the **+** icon and select **"New repository"**.
+3.  Fill in the details:
+    * **Repository name:** `ZeroCrash-AI-Navigator`
+    * **Description:** `An AI-powered smart navigation system that predicts accident-prone zones and suggests safer routes. Built with React, Python (Flask), OpenStreetMap, and the Gemini API.`
+    * Make it **Public** (so the judges can see it).
+    * **CRITICAL:** **DO NOT** check any of the boxes to "Add a README file," "Add .gitignore," or "Choose a license." We are providing our own files.
+4.  Click **"Create repository"**. 
+
+### **Step 3: Connect Your Project (Terminal Commands)**
+
+After you create the repository, GitHub will show you a page with commands under "...or push an existing repository from the command line." We will use those commands.
+
+1.  Go back to your VS Code terminal. Make sure you are in the main `ZeroCrash` folder (and that `(venv)` is deactivated).
+2.  Run these commands one by one:
+
+    ```bash
+    # 1. Initialize Git in your project
+    git init
+
+    # 2. Add all your files (except the ignored ones) to be tracked
+    git add .
+
+    # 3. Save your project with a commit message
+    git commit -m "Initial commit of ZeroCrash full-stack application"
+
+    # 4. Rename the default branch to 'main'
+    git branch -M main
+
+    # 5. Connect your local folder to the GitHub repository
+    # (Replace YOUR-USERNAME with your actual GitHub username)
+    git remote add origin https://github.com/YOUR-USERNAME/ZeroCrash-AI-Navigator.git
+
+    # 6. Push (upload) your code to GitHub
+    git push -u origin main
